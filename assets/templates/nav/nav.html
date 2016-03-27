@@ -3,26 +3,59 @@
     md-component-id="left"
     md-is-locked-open="$mdMedia('gt-sm')"
     md-whiteframe="2"
-    flex="20"
     >
  
  <md-toolbar>
   <div class="md-toolbar-tools">
     <h2>
-      <span>{{menuTitle}}</span>
+      <a ui-sref="main.page01">
+        <span>{{menuTitle}}</span>
+      </a>
     </h2>
     <span flex></span>
    
   </div>
 </md-toolbar>
-  <md-content layout-padding >
-    <md-list ng-cloak>
+  <md-content layout-padding flex>
+    <!-- <md-list ng-cloak>
       <md-list-item>
         <a ui-sref="main.page02">
           {{'100007'|translate}} {{'100008'|translate}}
         </a>
       </md-list-item>
      
-    </md-list>
+    </md-list> -->
+   <md-list>
+        <md-subheader class="md-no-sticky">Favorites</md-subheader>
+        <md-list-item>
+          <md-icon class="md-default-theme" class="material-icons">&#xE0C9;</md-icon>
+          <p>Messages</p>
+          <div class="md-secondary">2</div>
+        </md-list-item>
+        <md-list-item>
+          <md-icon class="md-default-theme" class="material-icons">&#xE878;</md-icon>
+          <p>Events</p>
+          <md-icon class="md-secondary">2</md-icon>
+        </md-list-item>
+        <md-list-item>
+          <md-icon class="md-default-theme" class="material-icons">&#xE251;</md-icon>
+          <p>Photos</p>
+          <md-icon class="md-secondary">2</md-icon>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-subheader class="md-no-sticky">Pages</md-subheader>
+        <md-list-item>
+          <md-icon class="md-default-theme" class="material-icons">&#xE7F9;</md-icon>
+          <p>Pages Feed</p>
+          <div class="md-secondary">2</div>
+        </md-list-item>
+        <md-list-item>
+          <md-icon class="md-default-theme" class="material-icons">&#xE1BC;</md-icon>
+          <p>Like Pages</p>
+          <div class="md-secondary">20+</div>
+        </md-list-item>
+   </md-list>
+
+
   </md-content>
 </md-sidenav>
