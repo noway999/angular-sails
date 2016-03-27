@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="sailsApp">
+  <head>
+    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="/bower_components/angular-loading-bar/build/loading-bar.min.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!--STYLES END-->
+  </head>
+
+  <body>
+    <div ui-view layout-fill></div>
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/angular-aria/angular-aria.js"></script>
+    <script src="/bower_components/angular-messages/angular-messages.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="/bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+    <script src="/bower_components/angular-material/angular-material.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/bower_components/angular-translate/angular-translate.min.js"></script>
+    <script src="/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers/mainCtrl.js"></script>
+    <script src="/js/controllers/page01Ctrl.js"></script>
+    <script src="/js/controllers/page02Ctrl.js"></script>
+    <script src="/js/directives/navDire.js"></script>
+    <script src="/js/services/mainServ.js"></script>
+    <script src="/js/services/page01Serv.js"></script>
+    <script src="/js/services/page02Serv.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>

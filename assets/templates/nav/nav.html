@@ -1,0 +1,28 @@
+<md-sidenav
+    class="md-sidenav-left"
+    md-component-id="left"
+    md-is-locked-open="$mdMedia('gt-sm')"
+    md-whiteframe="2"
+    flex="20"
+    >
+ 
+ <md-toolbar>
+  <div class="md-toolbar-tools">
+    <h2>
+      <span>{{menuTitle}}</span>
+    </h2>
+    <span flex></span>
+   
+  </div>
+</md-toolbar>
+  <md-content layout-padding >
+    <md-list ng-cloak>
+      <md-list-item>
+        <a ui-sref="main.page02">
+          {{'100007'|translate}} {{'100008'|translate}}
+        </a>
+      </md-list-item>
+     
+    </md-list>
+  </md-content>
+</md-sidenav>
